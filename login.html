@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>logion</title>
+	<style type="text/css">
+		body{
+         /* background: url(images/.png);*/
+       /* margin: 200px auto;*/
+          font-family: sans-serif;
+          /*background-repeat: no-repeat;
+          background: rgba(189, 195, 199,1.0);*/
+              }
+
+      .form-container{
+      	max-width: 400px;
+      	width: 100%;
+        margin: 0 auto;
+      	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+      }
+      .form-inner{
+      	padding: 30px;
+      }
+      h1{
+      	font-weight: normal;
+      	padding: 20px;
+      	color:#fff;
+      	text-align: center;
+      	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+      }
+      .form-holder{
+      	position: relative;
+      	margin-bottom: 25px;
+      }
+      .input-text{
+      	width: 100%;
+      	height: 40px;
+      	border:none;
+      	border-bottom: 2px solid #fff;
+      	background: transparent;
+      	color:#fff;
+      }
+      .label{
+        position: absolute;
+        pointer-events: none;
+        margin-left :-330px;
+        transition: .2s ease all;
+        font-size: 16px;
+        color:#fff;
+        top:26px;
+      }
+      button{
+      	cursor: pointer;
+      	border-radius: 3px;
+      	padding: 15px;
+      	width: 100%;
+      	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+      	border:none;
+      	font-size: 16px;
+      	background: transparent;
+      	transition: .2s ease ;
+      }
+      button:hover{
+      	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4);
+      }
+      button:focus{
+      	outline:0;
+      }
+      input:focus{
+      	outline:0;
+      	border-bottom: 2px solid #fff;
+      }
+        input:focus ~ .label,
+        input :not(:focus):invalid ~ .label{
+        top:-10px;
+      	left: 330;
+        font-size: 11px;
+        }
+        img{
+          position: absolute;
+        	width: 100%;
+        	/*height: 100%;*/
+        	z-index: -1;
+        	background:#ecf0f1;
+        	margin: -23px 0px -23px -16px;
+       }
+       
+	</style>
+</head>
+<body>
+	<div class="mas">
+		<img src="images/Senacbc.png">
+	</div>
+
+     <div class="form-container">
+     	         <form>
+     	      <h1>inicia cesión</h1>
+  	          <div class="form-inner">
+  			     <div class="form-holder">
+  				     <input type="text" name="Email" class="input-text"> 
+  				     <span class="label">Email</span>
+  			     </div>
+  			     <div class="form-holder">
+  				     <input type="text" name="Email" class="input-text"> 
+  				     <span class="label">Email</span>
+  			     </div>
+  			     <button>entrar</button>
+  	           </div>
+           </form>
+       </div>
+</body>
+</html>
